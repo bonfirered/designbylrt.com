@@ -2,11 +2,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>sixtytix</title>
+  <title>L&R Technologies</title>
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7134374/619068/css/fonts.css" />
-  <script src="//use.typekit.net/ktq2xiz.js"></script>
-  <script>try{Typekit.load();}catch(e){}</script>
+  <script src="https://cdn.jsdelivr.net/jquery/3.0.0-beta1/jquery.min.js"></script>
   
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->

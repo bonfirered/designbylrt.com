@@ -5,8 +5,10 @@
  * these variables directly from ../bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss to this file.
  */
 
+// Not Using
 // Set the proper directory for the Bootstrap Glyphicon font.
-$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';$bootstrap-sass-asset-helper: false !default;$bootstrap-sass-asset-helper: false !default;
+//$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';$bootstrap-sass-asset-helper: false !default;$bootstrap-sass-asset-helper: false !default;
+
 //
 // Variables
 // --------------------------------------------------
@@ -16,12 +18,12 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';$bo
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$brandblue:							#5DD8DA;
-$brandgold:							#FCBE01;
-$brandgrey:							#413D3A;
-$subgrey:							  #5A6370;
-$fontgrey:							#828A97;
-$lightgrey:						  #F9F9F9;
+$brandblue:				#5DD8DA;
+$brandgold:				#FCBE01;
+$brandgrey:				#413D3A;
+$subgrey:				#5A6370;
+$fontgrey:				#828A97;
+$lightgrey:				#F9F9F9;
 $gray-base:             #000 !default;
 $gray-darker:           lighten($gray-base, 13.5%) !default; // #222
 $gray-dark:             lighten($gray-base, 20%) !default;   // #333
@@ -100,7 +102,7 @@ $bold:										500;
 
 // [converter] If $bootstrap-sass-asset-helper if used, provide path relative to the assets load path.
 // [converter] This is because some asset helpers, such as Sprockets, do not work with file-relative paths.
-$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
+//$icon-font-path: if($bootstrap-sass-asset-helper, "bootstrap/", "../fonts/bootstrap/") !default;
 
 //** File name for all font files.
 $icon-font-name:          "glyphicons-halflings-regular" !default;
