@@ -1,0 +1,46 @@
+// Theme Customizations to Forms/Webforms //
+
+form {
+	.form-group {
+		@include make-xs-column(12);
+		padding: 0;
+		.wrapper {
+			position: relative;
+			&.active {
+				label {
+					color: $fontgrey;
+					top: 10px;
+					font-size: 8.25px;
+				}
+			}
+		}
+		label {
+			@include transition(all .2s);
+			font-family: $font-family-sans-serif;
+			color: #cdcdcd;
+			position: absolute;
+			text-transform: uppercase;
+			top: 15px;
+			left: 10px;
+			font-size: 14px;
+			font-weight: normal;
+			font-weight: 400;
+			letter-spacing: 1.1px;
+			cursor: text;
+		}
+		input {
+			height: 50px;
+			line-height: 1;
+			padding: 20px 10px 6px;
+			position: relative;
+			z-index: 1;
+			outline: none;
+		}
+		textarea {
+			z-index: 1;
+			padding: 22px 10px 6px;
+			background: transparent;
+			resize: none;
+		}
+	}
+}

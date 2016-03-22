@@ -1,0 +1,343 @@
+.touch {
+	.contact-dropdown {
+		.contact-form-close {
+			transition: all 0ms;
+		}
+	}
+}
+.contact-dropdown {
+	float: none;
+	position: relative;
+	display: block;
+	color: #FFF;
+	font-family: $gotham;
+	height: auto;
+	max-height: 0;
+	overflow: hidden;
+	transition: all 300ms;
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0, 0, 0, 0.05);
+	}
+	.container {
+		position: relative;
+	}
+	.contact-form-close {
+		font-size: 54px;
+		font-weight: 100;
+		color: #766e6b;
+		text-shadow: none;
+		opacity: 1;
+		padding: 0;
+		z-index: 100;
+		cursor: pointer;
+		background: transparent;
+		border: 0;
+		-webkit-appearance: none;
+		position: absolute;
+		transition: all 300ms;
+		top: 0;
+		right: 10px;
+		&:focus {
+			box-shadow: none;
+			outline: none;
+			border: 0;
+		}
+		&:hover {
+			span {
+				svg {
+					#Page-1 {
+						#x_grey {
+							path {
+								stroke: $brandgold;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	form {
+		@include make-xs-column(12);
+		@include make-md-column(8);
+		padding: 50px 0;
+		margin-bottom: 50px;
+		.content {
+			@include make-xs-column(10);
+			@include make-sm-column(7);
+			@include make-md-column(12);
+			padding: 0;
+		}
+		h2 {
+			font-size: 22.5px;
+			letter-spacing: 1.125px;
+			line-height: 30px;
+			margin-bottom: 5px;
+			font-weight: $headline;
+		}
+		span {
+			font-size: 13.5px;
+			letter-spacing: 0.675px;
+			font-weight: $body;
+		}
+		.wrapper {
+			background-color: rgba(255, 255, 255, .8);
+		}
+		.input {
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(4);
+			&.email {
+				@include make-xs-column(12);
+				@include make-md-column(4);
+				padding-right: 0;
+			}
+			padding: 0 15px 0 0;
+			margin: 20px 0 20px;
+			input {
+				background: transparent;
+				border-radius: 3px;
+				border: none;
+				color: #766e6b;
+				box-shadow: none;
+			}
+			&.last {
+				padding: 0 !important;
+			}
+		}
+
+		.checkbox {
+			clear: both;
+			width: 100%;
+			label {
+				color: $subgrey;
+				background-color: transparent;
+				padding-left: 5px;
+				padding-top: 5px;;
+				font-size: 13.5px;
+				text-transform: none;
+				font-weight: 400;
+				letter-spacing: .9px;
+			}
+			input[type="checkbox"] {
+				margin-left: 0;
+				margin-top: 3px;
+				display: inline-block;
+				border: none;
+				border-radius: 3px;
+				box-shadow: none;
+				color: $brandblue;
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				left: 6px;
+				&:focus {
+					outline: none;
+					box-shadow: none;
+					border: none;
+				}
+			}
+		}
+		input[type="checkbox"].styled:checked + label:after,
+		input[type="radio"].styled:checked + label:after,
+		.checkbox input[type=checkbox]:checked + label:after {
+	    background: url(/assets/img/contact_check.png);
+	    background-position-x: 0px;
+	    background-size: contain;
+	    width: 14px;
+	    left:1px;
+	    background-position-y: 3px;
+	    margin-top: 3px;
+	    background-repeat: no-repeat;
+	    content: " ";
+	    color: #FFF;
+		}
+		input[type="checkbox"].styled:checked label:after,
+		input[type="radio"].styled:checked label:after,
+		.checkbox label:after {
+	    padding-left: 5px;
+	    padding-top: 8px;
+	    font-size: 9px;
+	    background: transparent;
+		}
+		.checkbox-info input[type="checkbox"]:checked+label::before, 
+		.checkbox-info input[type="radio"]:checked+label::before {
+			background-color: #FFF;
+			border-color: transparent;
+		}
+		textarea {
+			@include make-xs-column(12);
+			float: none;
+			color: #766e6b;
+			background-color: rgba(255, 255, 255, .8);
+			width: 100%;
+			margin-bottom: 0;
+			padding: 5px;
+			border: none;
+			border-radius: 3px;
+			&:focus {
+				border: none;
+				outline: none;
+				box-shadow: none;
+			}
+		}
+	}
+	.phone {
+		@include make-md-column(3);
+		@include make-md-column-push(.5);
+		padding-top: 80px;
+		p {
+			text-transform: uppercase;
+			font-weight: 600;
+			font-size: 13.5px;
+			letter-spacing: 2.16px;
+			margin-bottom: 0;
+		}
+		a {
+			font-size: 22.5px;
+			font-weight: 300;
+			color: #FFF;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+.contact-container {
+  background: transparent;
+  color: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.contact-background {
+  height: 100% !important;
+  width: 100% !important;
+  background: url('../img/contactform_bg.jpg') no-repeat top center;
+  background-size: cover;
+  opacity: 1;
+}
+
+@media (min-width: 1441px) {
+	.contact-background {
+		background: url('../img/contactform_bg.jpg');
+		background-repeat: no-repeat;
+		background-position-y: -180px;
+		background-position-x: center;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+	.contact-dropdown {
+		.contact-form-close {
+		}
+		.phone {
+			margin-bottom: 50px !important;
+			z-index: -1;
+		}
+		form {
+			.content {
+				padding: 0;
+				h2 {
+					font-weight: 300;
+				}
+			}
+			margin-bottom: 0;
+			span {
+				display: none;
+			}
+			.input {
+				&.email {
+					padding: 0;
+					margin-top: 0;
+				}
+			}
+			.checkbox {
+				margin-bottom: 30px;
+			}
+		}
+	}
+	.contact-background {
+		background: url('../img/contactform_bg.jpg') no-repeat;
+		background-position-x: -400px;
+		background-position-y: -100px;
+		background-size: inherit;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (max-width: 767px) {
+	.contact-dropdown {
+		overflow: scroll;
+		transition: all 800ms;
+		.phone {
+			z-index: -1;
+		}
+		.contact-form-close {
+			float: right;
+			top: -20px;
+			right: 20px;
+			svg {
+				width: 20px;
+				height: 20px;
+			}
+		}
+		form {
+			padding-top: 0;
+			margin-bottom: 0;
+			h2 {
+				font-weight: 300;
+				margin-top: 50px;
+			}
+			span {
+				display: none;
+			}
+			.input {
+				padding: 0;
+				margin-bottom: 0;
+				&.email {
+					padding: 0;
+				}
+			}
+			.message {
+				margin-top: 20px;
+			}
+		}
+		.phone {
+			color: #FFF;
+			margin-bottom: 50px;
+			a {
+				color: #FFF;
+			}
+		}
+	}
+	.contact-background {
+		background-position-x: 0px;
+		background-position-y: 0px;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+@media (max-width: 450px) {
+	.contact-background {
+		background: url('../img/Mobile_ContactImage.jpg') no-repeat;
+		background-position-x: 0px;
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+	}
+}

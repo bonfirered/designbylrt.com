@@ -1,0 +1,79 @@
+.background {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-color: $lightgrey;
+	overflow: hidden;
+	#location {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		text-align: right;
+  	font-family: "Gotham A","Gotham B",sans-serif;
+  	font-size: 220px;
+  	color: #FFF;
+  	line-height: 216px;
+  	font-weight: 500;
+  	.lat-position {
+	   	position: absolute;
+	   	left: -20px;
+	   	top: 50px;
+	   	text-align: left;
+  	}
+  	.long-position {
+	   	position: absolute;
+		  right: -30px;
+		  bottom: -50px;
+  	}
+	}
+	.content {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 500px;
+		max-height: 200px;
+		margin: auto;
+		text-align: center;
+		color: $brandblue;
+		font-family: $gotham;
+		h1 {
+			font-weight: 500;
+			text-transform: uppercase;
+			font-size: 24px;
+		}
+		p {
+			font-size: 22px;
+			font-weight: 300;
+			margin-bottom: 30px;
+		}
+		a {
+			font-weight: 500;
+			font-size: 14px;
+		}
+	}
+}
+
+@media (max-width:768px) {
+	.background {
+		margin-top: -20px;
+    height: 87vh;
+		#location {
+			font-size: 120px;
+			line-height: 116px;
+			.lat-position {
+				top: -20px;
+			}
+			.long-position {
+				bottom: -20px;
+			}
+		}
+		.content {
+			width: 100%;
+			p {
+				font-size: 18px;
+			}
+		}
+	}
+}

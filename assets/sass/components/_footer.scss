@@ -1,0 +1,405 @@
+// Footer Styles
+footer {
+	@include make-xs-column(12);
+	padding: 0;
+	background-color: $brandgrey;
+	color: #998C86;
+	overflow: hidden;
+	font-family: $gotham;
+	.footer-signup {
+		@include make-xs-column(12);
+		@include make-sm-column(4.8);
+		height: 100%;
+		.content {
+			@include make-xs-column(12);
+			@include make-sm-column(12);
+			@include make-sm-column-push(0);
+			@include make-md-column(10);
+			@include make-md-column-push(1);
+			padding-left: 10px;
+			margin-top: 30px;
+			font-weight: $body;
+			line-height: 22.5px;
+			font-size: 13.5px;
+		}
+		img {
+			width: 35px;
+		}
+		h3 {
+			color: $brandblue;
+			font-weight: $bold;
+			letter-spacing: 2.25px;
+			line-height: 28.5px;
+			font-size: 22.5px;
+			margin-bottom: 21px;
+			text-transform: uppercase;
+		}
+		p {
+			margin-bottom: 15px;
+		}
+		button {
+			background-color: transparent;
+			color: $brandblue;
+			text-transform: uppercase;
+			border-radius: 2px;
+			font-weight: $bold;
+			letter-spacing: 2.16px;
+			font-size: 13.5px;
+			padding: 11px 50px;
+			border: solid 1px $brandblue;
+			transition: all 300ms;
+			&:focus {
+				outline: none;
+				box-shadow: none;
+			}
+			&:hover {
+				background-color: $brandblue;
+				color: #FFF;
+			}
+		}
+		.form {
+			display: none;
+		}
+	}
+	.social {
+		float: right;
+		@include make-xs-column(12);
+		@include make-sm-column(7.2);
+		padding: 50px 20px;
+		border-left: solid 1px #67625F;
+		border-bottom: solid 1px #67625F;
+		.column {
+			@include make-xs-column(12);
+			@include make-sm-column(6);
+			@include make-md-column(4);
+			h3 {
+				text-transform: uppercase;
+				color: $brandblue;
+				font-weight: 500;
+				font-size: 14px;
+				letter-spacing: 3px; 
+			}
+			ul {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				li {
+					margin-bottom: 10px;
+					a {
+						color: #998C86;
+						text-decoration: none;
+						font-weight: 300;
+						font-size: 13.5px;
+						transition: all 300ms;
+						&:hover {
+							color: $brandblue;
+							text-decoration: none;
+						} 
+					}
+				}
+			}
+		}
+		a {
+			&.social-section {
+				@include make-xs-column(4);
+				border-left: solid 1px #67625F;
+				border-bottom: solid 1px #67625F;
+				height: 220px;
+				background-color: transition;
+				transition: all 300ms;
+				.social-svg {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					right: 0;
+					left: 0;
+					margin: auto;
+					transition: all 300ms;
+				}
+				&:hover {
+					background-color: $brandblue;
+					.social-svg {
+						path {
+							fill: #FFF;
+						}
+						circle {
+							fill: #FFF;
+						}
+						rect {
+							fill: #FFF;
+						}
+					}
+				}
+			}
+		}
+	}
+	.footer-links {
+		@include make-xs-column(12);
+		@include make-sm-column(7.2);
+		display: block;
+		border-left: solid 1px #67625F;
+		padding: 40px 20px;
+		font-weight: 300;
+		a {
+			color: #998C86;
+			text-decoration: none;
+			font-weight: 300;
+			font-size: 13.5px;
+			line-height: 22.5px;
+			transition: all 300ms;
+			&:hover {
+				color: #FFF;
+			}
+		}
+		ul {
+			list-style: none;
+			padding-left: 0;
+		}
+		.copyright {
+			@include make-xs-column(12);
+			li {
+				float: left;
+				&:nth-child(2) {
+					float: right;
+				}
+			}
+			text-align: right;
+			margin-top: 15px;
+			a {
+				transition: all 300ms;
+				&:hover {
+					color: $brandblue;
+				}
+			}
+		}
+	}
+}
+.newsletter-form {
+	@include make-xs-column(12);
+	background-color: $brandgrey;
+	padding: 0;
+	margin-top: 22px;
+	transition: all 500ms;
+	.form-group {
+		.wrapper {
+			label {
+				color: #998C86;
+				top: 13px;
+			}
+			&.active {
+				label {
+					color: #998C86;
+					top: 4px;
+				}
+			}
+		}
+	}
+	.wrapper {
+		border: solid 1px #998C86;
+	}
+	.input {
+		@include make-xs-column(12);
+		@include make-sm-column(12);
+		@include make-md-column(6);
+		padding: 0;
+		margin-bottom: 15px;
+		&.last {
+			padding-left: 7.5px;
+		}
+		&.first {
+			padding-right: 7.5px;
+		}
+		input {
+			background-color: transparent;
+			border: 0;
+			color: #998C86;
+			box-shadow: none;
+			width: 100%;
+		}
+		&.email {
+			@include make-xs-column(12);
+			padding: 0;
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+	footer {
+		top: 0;
+		.footer-signup {
+			.content {
+				margin-top: 33px;
+				.footer-logo {
+					height: 45px;
+					width: 26.25px;
+				}
+				h3 {
+					margin-bottom: 10px;
+					font-size: 18.9675px;
+				}
+				p {
+					font-size: 16.5px;
+					margin-bottom: 25px;
+				}
+			}
+		}
+		.footer-links {
+			padding-bottom: 50px;
+		}
+	}
+	.newsletter-form {
+		padding-bottom: 15px;
+		padding-right: 15px;
+		.input {
+			&.first {
+				padding-right: 0;
+			}
+			&.last {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+// Media Queries For Tablet Portrait and Lower
+@media (max-width: 767px) {
+	footer {
+		overflow: visible;
+		top: 0;
+		.footer-signup {
+			border-bottom: solid 1px #67625F;
+			padding-bottom: 50px;
+			.content {
+				font-size: 20px;
+				line-height: 31.5px;
+				padding: 0;
+			}
+			h3 {
+				font-size: 33px;
+				letter-spacing: 2.6px;
+				line-height: 49.5px;
+			}
+			a {
+				margin-top: 30px;
+			}
+		}
+		.social {
+			border-left: 0;
+			.column {
+				padding-left: 0;
+			}
+			a {
+				&.social-section {
+					height: 100px;
+					border-left: solid 1px #67625F;
+					border-bottom: none;
+					&:first-of-type {
+						border-left: none;
+					}
+				}
+			}
+		}
+		.footer-links {
+			height: auto;
+			border-left: none;
+			border-bottom: solid 1px #67625F;
+			padding: 50px 0;
+			h4 {
+				letter-spacing: 2.7px;
+				line-height: 42px;
+				font-size: 27px;
+				margin-top: 0;
+			}
+			a {
+				font-size: 22.5px;
+				line-height: 31.5px;
+			}
+			.company {
+				margin-bottom: 40px;
+			}
+			.copyright {
+				margin-top: 0px;
+				padding-bottom: 0;
+				text-align: left;
+				ul {
+					li {
+						text-align: left;
+						width: 100%;
+						padding: 0;
+					}
+				}
+				a {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	.newsletter-form {
+		.form-group {
+			.wrapper {
+				&.active {
+					label {
+						top: 0;
+					}
+				}
+			}
+		}
+		.input {
+			padding-top: 30px;
+			margin-top: 10px;
+			&.first, &.last {
+				padding: 0;
+			}
+		}
+	}
+}
+
+@media (max-width:450px) {
+	footer {
+		.footer-signup {
+			padding: 30px 30px 45px 30px;
+			button {
+				margin-top: 20px;
+				font-size: 17px;
+				padding: 12px 45px;
+			}
+			.content {
+				padding: 0;
+			}
+			h3 {
+				font-size: 20px;
+				letter-spacing: 2.6px;
+				line-height: 27.5px;
+				font-weight: 600;
+			}
+			p {
+				font-size: 15px;
+				padding-right: 20px;
+				line-height: 22px;
+			}
+		}
+		.footer-links {
+			padding: 30px;
+			h4 {
+				font-size: 18px;
+				line-height: 22px;
+				letter-spacing: 2px;
+				font-weight: 600;
+			}
+			a {
+				font-size: 18px;
+				line-height: 26px;
+			}
+			.copyright {
+				padding: 0;
+			}
+		}
+		.social {
+			border-left: 0;
+			padding: 30px;
+			a {
+				font-size: 18px !important;
+			}
+		}
+	}
+}
