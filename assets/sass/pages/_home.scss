@@ -1,47 +1,5 @@
-// Home
-.home {
-	margin-top: -20px;
-	height: 100%;
-	overflow-x: hidden;
-	background-color: #ccc;
-	.full-screen {
-		height: 100%;
-		width: 100%;
-		margin: 0 auto;
-		background-color: #000;
-	}
-	.clock {
-		position: relative;
-	  top: 50%;
-	  -webkit-transform: translateY(-50%);
-	  -ms-transform: translateY(-50%);
-	  transform: translateY(-50%);
-		h2 {
-			color: #fff;
-			font-size: 100px;
-			text-align: center;
-		}
-	}
-}
 
-// Hide video on touch devices
-.touch {
-	.video {
-		opacity: 1 !important;
-		top: 0;
-		right: 2%;
-		background: url(/assets/img/flight.svg);
-		background-size: 100% auto;
-		background-repeat: no-repeat;
-		background-position: top left;
-		.video-wrapper {
-			display: none;
-		}
-	}
-	.video-wrapper {
-		display: none;
-	}
-}
+
 
 @media (min-width: 1441px) {
 	.home {}
