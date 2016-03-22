@@ -3,6 +3,7 @@ var currentLoc, offsetLoc;
 // JS FOR ALL ELEMENTS ON THE HOME PAGE
 $(function() {
  colorChanger();
+ logoAnimation();
 
 });
 
@@ -25,7 +26,7 @@ function colorChanger(){
   var colorIndices = [0,1,2,3];
 
   //transition speed
-  var gradientSpeed = 0.002;
+  var gradientSpeed = 0.004;
 
   function updateGradient()
   {
@@ -74,4 +75,9 @@ function colorChanger(){
   }
 
   setInterval(updateGradient,10);
+}
+
+function logoAnimation(){ 
+  TweenMax.from(".logo-L", 0.6, {x: -300, y: -300, opacity:0, delay: 0.3});
+  TweenMax.from(".logo-R", 0.6, {x: 300, y: 300, opacity:0, delay: 0.3});
 }
