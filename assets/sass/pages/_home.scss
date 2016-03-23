@@ -67,7 +67,7 @@ p {
 	}
 }
 .cta-container {
-	width: 217px;
+	width: 219px;
 	margin: 0 auto;
 }
 a {
@@ -117,6 +117,10 @@ a {
 	  background-image: -o-linear-gradient(top, #fff 0%, #fff 100%), -o-linear-gradient(top, #fff 0%, #fff 100%);
 	  background-image: linear-gradient(to bottom, #fff 0%, #fff 100%), linear-gradient(to bottom, #fff 0%, #fff 100%); */
   	transition: 1.5s;
+  }
+  &:visited {
+  	color: rgba(255,255,255, 0.9);
+  	text-decoration: none;
   }
 }
 .bg-color {
