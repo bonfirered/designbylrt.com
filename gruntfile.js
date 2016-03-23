@@ -59,7 +59,7 @@ module.exports = function (grunt) {
                 },
                 options: {
                     watchTask: true,
-                    proxy: 'dragonfly-feb.dev'  // Change this to the IP or hostname of your Drupal website //
+                    proxy: 'designbylrt.dev'  // Change this to the IP or hostname of your Drupal website //
                 }
             }
         }

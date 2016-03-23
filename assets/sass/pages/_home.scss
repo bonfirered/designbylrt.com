@@ -37,6 +37,8 @@ h1 {
 		linear-gradient(315deg, hsla(207, 98%, 41%, 1) 100%, hsla(207, 98%, 41%, 0) 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 h2, p {
@@ -78,7 +80,6 @@ a {
 	letter-spacing: 2px;
 	padding: 20px 50px;
 	background-color: rgba(255,255,255,0);
-	border: 1px solid teal;
 /* 	border-top: 1px solid #3ACFD5;
   border-bottom: 1px solid #3a4ed5;
   -webkit-box-sizing: border-box;
@@ -94,11 +95,20 @@ a {
   background-image: -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%), -moz-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
   background-image: -o-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%), -o-linear-gradient(top, #3acfd5 0%, #3a4ed5 100%);
   background-image: linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%), linear-gradient(to bottom, #3acfd5 0%, #3a4ed5 100%); */
+  border: 1px solid transparent;
+  -moz-border-image: -moz-linear-gradient(left, #662f76 0%, #963d6f 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, #662f76 0%, #963d6f 100%);
+	border-image: linear-gradient(to right, #662f76 0%, #963d6f 100%);
+
+	border-image-slice: 1;
   transition: 0.5s;
   &:hover {
   	color: rgba(255,255,255, 0.9);
   	text-decoration: none;
-  	border: 1px solid #fff;
+  	/* border: 1px solid #fff;
+  	-moz-border-image: none;
+		-webkit-border-image: none;
+		border-image: none; */
 /*   	border-top: 1px solid #fff;
   	border-bottom: 1px solid #fff;
   	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=),url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYWNmZDUiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzNhNGVkNSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
@@ -106,7 +116,7 @@ a {
 	  background-image: -moz-linear-gradient(top, #fff 0%, #fff 100%), -moz-linear-gradient(top, #fff 0%, #fff 100%);
 	  background-image: -o-linear-gradient(top, #fff 0%, #fff 100%), -o-linear-gradient(top, #fff 0%, #fff 100%);
 	  background-image: linear-gradient(to bottom, #fff 0%, #fff 100%), linear-gradient(to bottom, #fff 0%, #fff 100%); */
-  	transition: 1s;
+  	transition: 1.5s;
   }
 }
 .bg-color {
@@ -116,38 +126,37 @@ a {
   margin-top: -39px;
 	position: absolute;
 	opacity: 0;
+	border: 2px solid #fff;
+	transition: 1.5s;
 }
 
 
-@media (min-width: 1441px) {
-	.home {}
+@media (min-width: 1441px) {}
+
+@media (max-width: 1440px) {}
+
+@media (min-width: 1166px) {}
+
+@media (min-width:992px) and (max-width:1166px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {}
+
+@media (max-width:767px) {}
+
+@media (max-width:660px) {
+	h1 {
+		font-size: 30px;
+		margin-bottom: 50px;
+		-webkit-transition: 1s;
+		transition: 1s;
+	}
+	h2 {
+		font-size: 24px;
+    line-height: 33px;
+	}
 }
 
-// Hero responsive tweaks
-@media (max-width: 1440px) {
-	.home {}
-}
+@media (max-width: 450px) {}
 
-@media (min-width: 1166px) {
-	.home {}
-}
+@media (max-width:320px) {}
 
-@media (min-width:992px) and (max-width:1166px) {
-	.home {}
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-	.home {}
-}
-
-@media (max-width:767px) {
-	.home {}
-}
-
-@media (max-width: 450px) {
-	.home {}
-}
-
-@media (max-width:320px) {
-	.home {}
-}

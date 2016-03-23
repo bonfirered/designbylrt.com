@@ -10,8 +10,8 @@ $(function() {
 function colorChanger(){
 
   var colors = new Array(
-    [62,35,255],
-    [60,255,60],
+    [150,61,111],
+    [210,157,105],
     [255,35,98],
     [45,175,230],
     [255,0,255],
@@ -54,9 +54,9 @@ function colorChanger(){
       background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
 
   $('.container a').hover(function(e) {
-      $('.bg-color').css({opacity: "0.8"}).css({transition: "1s"});
+      $('.bg-color').css({opacity: "0.8"}).css({transition: "1.5s"});
   }, function(e) {
-      $('.bg-color').css({opacity: "0"}).css({transition: "1s"});
+      $('.bg-color').css({opacity: "0"}).css({transition: "1.5s"});
   });
 
     step += gradientSpeed;
