@@ -78,6 +78,6 @@ function colorChanger(){
 }
 
 function logoAnimation(){ 
-  TweenMax.from(".logo-L", 0.6, {x: -300, y: -300, opacity:0, delay: 0.3});
-  TweenMax.from(".logo-R", 0.6, {x: 300, y: 300, opacity:0, delay: 0.3});
+  TweenMax.from("#logo-L", 0.6, {x: -300, y: -300, opacity:0, delay: 0.3});
+  TweenMax.from("#logo-R", 0.6, {x: 300, y: 300, opacity:0, delay: 0.3});
 }

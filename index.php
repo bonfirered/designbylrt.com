@@ -7,10 +7,13 @@
       <div class="logo">
         <?php include('includes/logo.inc'); ?>
       </div>
-      <h1>L&R Technologies</h1>
-      <h2>Lorem Ipsum</h2>
-      <h2>We're Coming Soon</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer finibus elementum lacinia. Aliquam vel lacus turpis. Donec in pellentesque lectus, eget bibendum lacus. Sed laoreet hendrerit libero non accumsan. Suspendisse feugiat enim ut arcu fermentum.</p>
+      <div class="logo-text">
+        <?php include('includes/logo-text.inc'); ?>
+      </div>
+      <!-- <h1>L&R Technologies</h1> -->
+      <h2>The Ultimate<br>in CATIA Design</h2>
+      <div class="divider"></div>
+      <p>L&R Technologies is the premier technical design company specializing in CATIA V5. Backed by 30 years of combined experience, L&R Technologies helps to bridge the gap between manufacturing and engineering with user-centric design, streamlined methodology, and unmatched results that speak for themselves.</p>
       <div class="cta-container">
         <a href="#">Contact US</a>
         <div class="bg-color"></div>
