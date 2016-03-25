@@ -1,12 +1,15 @@
-.home {
-	padding-bottom: 50px;
-	background-image: url('/assets/img/bg.jpg');
+body {
+}
+.home {	
+	height: auto;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 .bg-container {
 	width: 100%;
+	background-image: url('/assets/img/bg.jpg');
 	height: 100%;
+	padding-bottom: 80px;
 	//opacity: 0.4;
 	//background-image: url('/assets/img/bg-2_v2.png');
 	background-size: cover;
@@ -177,10 +180,12 @@ a {
 
 @media (max-width:767px) {}
 
-@media (max-width:660px) {
+@media (min-width:661px) {
 	.home {
-		height: auto;
+		height: 100%;
 	}
+}
+@media (max-width:660px) {
 	h1 {
 		font-size: 30px;
 		margin-bottom: 50px;
@@ -196,6 +201,9 @@ a {
 	}
 	.logo-text, p {
 		width: 90%;
+	}
+	p {
+		margin-bottom: 80px;
 	}
 }
 
