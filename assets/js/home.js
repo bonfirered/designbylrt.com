@@ -52,6 +52,9 @@ function colorChanger(){
    $('.bg-color').css({
      background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
       background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
+     $('.divider.active').css({
+     background: "-webkit-gradient(linear, left top, right top, from("+color1+"), to("+color2+"))"}).css({
+      background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
 
   $('.container a').hover(function(e) {
       $('.bg-color').css({opacity: "0.8"}).css({transition: "1.5s"});
@@ -73,6 +76,18 @@ function colorChanger(){
       
     }
   }
+
+  // Changes divider colors
+  /*$('.cta-container a').hover(
+    function () {
+      $('.divider').addClass('active');
+      $('.divider').removeClass('back-to-it');
+    }, 
+    function () {
+      $('.divider').removeClass('active');
+      $('.divider').addClass('back-to-it');
+    }
+  );*/
 
   setInterval(updateGradient,10);
 }

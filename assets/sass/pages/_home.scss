@@ -16,6 +16,10 @@
 }
 
 h1 {
+	/* If using svg for logo text */
+	position:absolute;
+	top: -100%;
+
 	font-size: 48px;
 	font-family: 'GothamLight';
 	text-align: center;
@@ -78,6 +82,8 @@ p {
 	height: 1px;
 	width: 70px;
 	margin: 0 auto;
+}
+.divider.back-to-it {
 	background: rgba(193,87,96,1);
 	background: -moz-linear-gradient(left, rgba(193,87,96,1) 0%, rgba(205,132,99,1) 100%);
 	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(193,87,96,1)), color-stop(100%, rgba(205,132,99,1)));
@@ -89,7 +95,7 @@ p {
 }
 
 .cta-container {
-	width: 219px;
+	width: 218px;
 	margin: 0 auto;
 }
 a {
