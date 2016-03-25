@@ -1,4 +1,5 @@
 .home {
+	padding-bottom: 50px;
 	background-image: url('/assets/img/bg.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -177,6 +178,9 @@ a {
 @media (max-width:767px) {}
 
 @media (max-width:660px) {
+	.home {
+		height: auto;
+	}
 	h1 {
 		font-size: 30px;
 		margin-bottom: 50px;
@@ -187,7 +191,10 @@ a {
 		font-size: 24px;
     line-height: 33px;
 	}
-	.logo-text {
+	.logo {
+		width: 95px;
+	}
+	.logo-text, p {
 		width: 90%;
 	}
 }
