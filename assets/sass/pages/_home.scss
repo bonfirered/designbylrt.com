@@ -7,6 +7,7 @@ html, body {
 }
 .home {	
 	height: 100%;
+	overflow: visible;
 	background-image: url('/assets/img/bg@2x.jpg');
 	background-attachment: fixed;
 	background-size: cover;
@@ -27,6 +28,7 @@ html, body {
 }
 .container {
 	padding-top: 85px;
+	padding-bottom: 70px;
 }
 
 h1 {
@@ -163,6 +165,9 @@ a {
   }
 }
 
+//simple height query
+@media screen and ( max-height: 600px ){
+}
 
 @media (min-width: 1441px) {}
 
@@ -207,7 +212,11 @@ a {
 	}
 }
 
-@media (max-width: 450px) {}
+@media (max-width: 500px) {
+	.container {
+		padding-bottom: 40px;
+	}
+}
 
 @media (max-width:320px) {}
 
