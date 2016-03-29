@@ -5,7 +5,8 @@
     <div id="colorchanger" class="bg-container">
       <div class="container">
         <div class="logo">
-          <?php include('includes/logo.inc'); ?>
+          <?php //include('includes/logo.inc'); ?>
+          <img src="/assets/img/logo.png"/>
         </div>
         <div class="logo-text">
           <?php include('includes/logo-text.inc'); ?>
