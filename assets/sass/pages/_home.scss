@@ -13,7 +13,7 @@ html, body {
 }
 .bg-container {
 	width: 100%;
-	background-image: url('/assets/img/bg@2x.jpg');
+	//background-image: url('/assets/img/bg@2x.jpg');
 	height: 100%;
 	padding-bottom: 80px;
 	//opacity: 0.4;
@@ -178,7 +178,11 @@ a {
 	}
 } */
 @media (max-width:660px) {
+	.home {
+		height: auto !important;
+	}
 	.bg-container {
+		height: auto !important;
 		background-position: 50%;
 	}
 	h1 {
