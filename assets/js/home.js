@@ -57,9 +57,9 @@ function colorChanger(){
       background: "-moz-linear-gradient(left, "+color1+" 0%, "+color2+" 100%)"});
 
   $('.container a').hover(function(e) {
-      $('.bg-color').css({opacity: "0.8"}).css({transition: "1.5s"});
+      $('.bg-color').css({opacity: "0.8"}).css({transition: "0.7s"});
   }, function(e) {
-      $('.bg-color').css({opacity: "0"}).css({transition: "1.5s"});
+      $('.bg-color').css({opacity: "0"}).css({transition: "0.7s"});
   });
 
     step += gradientSpeed;
@@ -93,6 +93,6 @@ function colorChanger(){
 }
 
 function logoAnimation(){ 
-  TweenMax.from("#logo-L", 0.6, {x: -300, y: -300, opacity:0, delay: 0.3});
-  TweenMax.from("#logo-R", 0.6, {x: 300, y: 300, opacity:0, delay: 0.3});
+  TweenMax.from("#logo-L", 0.5, {x: -300, y: -300, opacity:0, delay: 0.3});
+  TweenMax.from("#logo-R", 0.5, {x: 300, y: 300, opacity:0, delay: 0.3});
 }
