@@ -2,10 +2,11 @@ html, body {
 	height: 100%;
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
 }
 .home {	
-	height: auto;
+	height: 100%;
 	background-image: url('/assets/img/bg@2x.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -122,12 +123,13 @@ a {
   -moz-border-image: -moz-linear-gradient(left, #662f76 0%, #963d6f 100%);
 	-webkit-border-image: -webkit-linear-gradient(left, #662f76 0%, #963d6f 100%);
 	border-image: linear-gradient(to right, #662f76 0%, #963d6f 100%);
-
 	border-image-slice: 1;
   transition: 0.5s;
   &:hover {
   	color: rgba(255,255,255, 0.9);
   	text-decoration: none;
+  	border-image: none;
+  	border: 1px solid rgba(0,0,0,0);
   }
   &:visited {
   	color: rgba(255,255,255, 0.9);
@@ -148,6 +150,9 @@ a {
 @-moz-document url-prefix() { 
   html, body {
   	width: 101% !important;
+  }
+  .bg-color {
+  	margin-top: -41px;
   }
   .bg-container {
   	background: none;
