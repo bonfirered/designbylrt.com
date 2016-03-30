@@ -111,7 +111,7 @@ p {
 }
 
 .cta-container {
-	width: 218px;
+	width: 220px;
 	margin: 0 auto;
 }
 a {
@@ -143,7 +143,7 @@ a {
   }
 }
 .bg-color {
-	width: 215px;
+	width: 217px;
   background-color: red;
   height: 57px;
   margin-top: -39px;
@@ -167,13 +167,6 @@ a {
 
 //simple height query
 @media screen and ( max-height: 600px ){
-}
-
-// IE Only
-@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	.cta-container {
-		width: 220px;
-	}
 }
 
 @media (min-width: 1441px) {}
