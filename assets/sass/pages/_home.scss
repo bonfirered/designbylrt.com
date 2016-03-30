@@ -164,6 +164,12 @@ a {
   	background: none;
   }
 }
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     /* IE10+ CSS styles go here */
+     .cta-container {
+      	width: 220px;
+     }
+}
 
 //simple height query
 @media screen and ( max-height: 600px ){
