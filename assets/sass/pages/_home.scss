@@ -152,6 +152,7 @@ a {
 	transition: 1.5s;
 }
 
+/* Mozilla Code */
 @-moz-document url-prefix() { 
   html, body {
   	width: 101% !important;
@@ -163,8 +164,8 @@ a {
   	background: none;
   }
 }
+/* IE10 and up code */
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-	/* IE10+ CSS styles go here */
 	.cta-container {
 		width: 220px;
 	}
@@ -180,6 +181,7 @@ a {
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ab2e6', endColorstr='#105d87', GradientType=1 );
 	}
 }
+/* Microsoft EDGE Only */
 @supports (-ms-accelerator:true) {
   .cta-container {
 		width: 220px;
