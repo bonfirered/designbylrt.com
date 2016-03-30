@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--[if IEMobile 7 ]> <html dir="ltr" lang="en-US"class="no-js iem7"> <![endif]-->
-<!--[if lt IE 7 ]> <html dir="ltr" lang="en-US" class="ie6 ie-only"> <![endif]-->
-<!--[if IE 7 ]>    <html dir="ltr" lang="en-US" class="ie7 ie-only"> <![endif]-->
-<!--[if IE 8 ]>    <html dir="ltr" lang="en-US" class="ie8 ie-only"> <![endif]-->
-<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html dir="ltr" lang="en"><!--<![endif]-->
+<html lang="en">
   <?php include('includes/head.inc'); ?>
   <body class="home">
     <div id="colorchanger" class="bg-container">

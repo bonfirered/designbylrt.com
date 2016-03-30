@@ -169,6 +169,13 @@ a {
 @media screen and ( max-height: 600px ){
 }
 
+// IE Only
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.cta-container {
+		width: 220px;
+	}
+}
+
 @media (min-width: 1441px) {}
 
 @media (max-width: 1440px) {}
