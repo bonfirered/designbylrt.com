@@ -144,7 +144,6 @@ a {
 }
 .bg-color {
 	width: 215px;
-  background-color: red;
   height: 57px;
   margin-top: -39px;
 	position: absolute;
@@ -153,6 +152,7 @@ a {
 	transition: 1.5s;
 }
 
+/* Mozilla Code */
 @-moz-document url-prefix() { 
   html, body {
   	width: 101% !important;
@@ -164,10 +164,34 @@ a {
   	background: none;
   }
 }
+/* IE10 and up code */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.cta-container {
+		width: 220px;
+	}
+	.bg-color {
+		width: 217px;
+		background: rgba(74,178,230,1);
+		background: -moz-linear-gradient(left, rgba(74,178,230,1) 0%, rgba(60,160,173,1) 41%, rgba(16,93,135,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(74,178,230,1)), color-stop(41%, rgba(60,160,173,1)), color-stop(100%, rgba(16,93,135,1)));
+		background: -webkit-linear-gradient(left, rgba(74,178,230,1) 0%, rgba(60,160,173,1) 41%, rgba(16,93,135,1) 100%);
+		background: -o-linear-gradient(left, rgba(74,178,230,1) 0%, rgba(60,160,173,1) 41%, rgba(16,93,135,1) 100%);
+		background: -ms-linear-gradient(left, rgba(74,178,230,1) 0%, rgba(60,160,173,1) 41%, rgba(16,93,135,1) 100%);
+		background: linear-gradient(to right, rgba(74,178,230,1) 0%, rgba(60,160,173,1) 41%, rgba(16,93,135,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4ab2e6', endColorstr='#105d87', GradientType=1 );
+	}
+}
+/* Microsoft EDGE Only */
+@supports (-ms-accelerator:true) {
+  .cta-container {
+		width: 220px;
+  }
+}
 
 //simple height query
 @media screen and ( max-height: 600px ){
 }
+
 
 @media (min-width: 1441px) {}
 
@@ -217,6 +241,4 @@ a {
 		padding-bottom: 40px;
 	}
 }
-
-@media (max-width:320px) {}
 
